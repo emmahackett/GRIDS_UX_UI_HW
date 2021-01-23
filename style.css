@@ -86,7 +86,7 @@ body {
 
 #tragenda-project-image {
     grid-area: tragenda-project-image;
-    background-image: url(../images/tragenda_tile.jpg);
+    background-image: url(./images/tragenda_tile.jpg);
 }
 
 #tragenda-project-blurb {
@@ -103,7 +103,7 @@ body {
 
 #frigo-project-image {
     grid-area: frigo-project-image;
-    background-image: url(../images/frigo_tile.jpg);
+    background-image: url(./images/frigo_tile.jpg);
 }
 
 #frigo-project-blurb {
@@ -119,7 +119,7 @@ body {
 
 #tiny-tails-project-image {
     grid-area: tiny-tails-project-image;
-    background-image: url(../images/tt_tile.jpg);
+    background-image: url(./images/tt_tile.jpg);
 }
 
 #tiny-tails-project-blurb {
