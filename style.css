@@ -1,0 +1,256 @@
+body {
+    margin: 0px;
+    padding: 20px 50px;
+}
+
+/* NAVIGATION BAR */
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 20px;
+    background-color: white;
+}
+
+.site-logo {
+    width: 280px;
+    margin-left: 22px;
+}
+
+.site-menu {
+    width: 20px;
+    margin-left: 5px;
+    justify-content: end;
+}
+
+/* COLUMNS */
+#columns {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 20% 75% 5%;
+    grid-template-areas: "column-left column-middle column-right";
+    background-color:white;
+  }
+
+/*COLUMN LEFT*/
+
+#column-left {
+    position: fixed;
+    top: 20;
+    left: 3%;
+    width: 20%;
+    margin-right: 20px;
+    background-color: white;
+    height: 90vh;
+}
+
+#side-bar {
+    align-items: space-between;
+}
+
+#intro-text {
+    grid-area: intro-text;
+}
+
+#social-links {
+    position: fixed;
+    bottom: 4%;
+    grid-area: social-links;
+    margin-top: 30px;
+    align-items: end;
+
+}
+
+/*COLUMN MIDDLE*/
+
+#column-middle {
+    margin-right: 15px;
+    margin-left: 75px;
+    grid-area: column-middle;
+    background-color: white;
+}
+
+#tragenda {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    "tragenda-project-image tragenda-project-blurb";
+}
+
+#tragenda-project-image {
+    grid-area: tragenda-project-image;
+    background-image: url(/images/tragenda_tile.jpg);
+}
+
+#tragenda-project-blurb {
+    grid-area: tragenda-project-blurb;
+}
+
+#frigo {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    "frigo-project-image frigo-project-blurb";
+}
+
+#frigo-project-image {
+    grid-area: frigo-project-image;
+    background-image: url(/images/frigo_tile.jpg);
+}
+
+#frigo-project-blurb {
+    grid-area: frigo-project-blurb;
+}
+#tiny-tails {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    "tiny-tails-project-image tiny-tails-project-blurb";
+}
+
+#tiny-tails-project-image {
+    grid-area: tiny-tails-project-image;
+    background-image: url(/images/tt_tile.jpg);
+}
+
+#tiny-tails-project-blurb {
+    grid-area: tiny-tails-project-blurb;
+}
+
+.project-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.project-blurb {
+    background-color: white;
+    padding: 20px;
+    align-items: end;
+}
+/*COLUMN RIGHT*/
+
+#column-right {
+    position: fixed;
+    top: 20;
+    right: 3%;
+    width: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "scroll";
+    background-color: white;
+    align-items: end;
+    height: 90vh;
+}
+
+#scroll {
+    grid-area: scroll;
+}
+
+/* BUTTONS */
+
+.primary-link {
+    font-family: futura-pt-bold,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding-top: 5px;
+    border-bottom: solid;
+    border-width: 10px;
+    border-color: #FFC414;
+    width: 25px;
+    text-decoration-line: solid;
+    text-decoration-style: 1px;
+}
+
+hr.primary-link-line {
+    width: 20px;
+    margin-left: -5px;
+    border: solid 6px #FFC414;
+    margin-top: -25px;
+}
+
+.primary-button {
+    font-family: futura-pt,sans-serif;
+    padding: 0px;
+    background-color: #33333300;
+    border: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+hr.primary-button-line {
+    margin-left: 0px;
+    border: solid 0.5px #333333;
+    margin-top: 0px;
+    width: 40%;
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 4%;
+    right: 3%;
+    width: 150px;
+    padding-left: 70px;
+    font-weight: 400;
+}
+
+/* TEXT & IMAGES */
+
+p, td {
+    font-family: futura-pt,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #333333
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: futura-pt-bold,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12pt;
+    color: #333333
+
+}
+
+.copyright {
+    font-size: 8pt;
+    font-family: futura-pt,sans-serif;
+    font-weight: 300;
+    color: #333333
+}
+
+.body-large {
+    font-size: 14pt;
+    font-family: futura-pt,sans-serif;
+    color: #333333;
+}
+
+a {
+    font-family: futura-pt;
+    text-decoration: none;
+    color: #333333;
+}
+
+.capabilities-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+td {
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
