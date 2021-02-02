@@ -1,175 +1,35 @@
-body {
-    margin: 0px;
-    padding: 20px 50px;
-}
+@media all and (min-width: 960px) {
+#index-content, #tt-case-study, #navigation {
+    padding: 40px;
+}}
+
+@media all and (max-width: 960px) {
+    #index-content, #tt-case-study, #navigation {
+        padding: 30px;
+    }}
 
 /* NAVIGATION BAR */
+
 #navigation {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 20px;
     display: flex;
     width: 95%;
     align-items: center;
     justify-content: space-between;
     z-index: 2;
-    padding: 20px;
     background-color: white;
-}
-
-.site-logo {
-    width: 280px;
-    margin-left: 22px;
-}
-
-.site-menu {
-    width: 20px;
-    margin-left: 5px;
-    justify-content: end;
-}
-
-/* COLUMNS */
-#columns {
-    display: grid;
-    margin-top: 50px;
-    grid-template-columns: 20% 75% 5%;
-    grid-template-areas: "column-left column-middle column-right";
-    background-color:white;
-  }
-
-/*COLUMN LEFT*/
-
-#column-left {
-    position: fixed;
-    top: 20;
-    left: 3%;
-    width: 20%;
-    margin-right: 20px;
-    background-color: white;
-    height: 90vh;
-}
-
-#side-bar {
-    align-items: space-between;
-}
-
-#intro-text {
-    grid-area: intro-text;
-}
-
-#social-links {
-    position: fixed;
-    bottom: 4%;
-    grid-area: social-links;
-    margin-top: 30px;
-    align-items: end;
-
-}
-
-/*COLUMN MIDDLE*/
-
-#column-middle {
-    margin-right: 15px;
-    margin-left: 75px;
-    grid-area: column-middle;
-    background-color: white;
-}
-
-#tragenda {
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-areas: 
-    "tragenda-project-image tragenda-project-blurb";
-}
-
-#tragenda-project-image {
-    grid-area: tragenda-project-image;
-    background-image: url(./images/tragenda_tile.jpg);
-}
-
-#tragenda-project-blurb {
-    grid-area: tragenda-project-blurb;
-}
-
-#frigo {
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-areas: 
-    "frigo-project-image frigo-project-blurb";
-}
-
-#frigo-project-image {
-    grid-area: frigo-project-image;
-    background-image: url(./images/frigo_tile.jpg);
-}
-
-#frigo-project-blurb {
-    grid-area: frigo-project-blurb;
-}
-#tiny-tails {
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-areas: 
-    "tiny-tails-project-image tiny-tails-project-blurb";
-}
-
-#tiny-tails-project-image {
-    grid-area: tiny-tails-project-image;
-    background-image: url(./images/tt_tile.jpg);
-}
-
-#tiny-tails-project-blurb {
-    grid-area: tiny-tails-project-blurb;
-}
-
-.project-image {
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
-}
-
-.project-blurb {
-    background-color: white;
-    padding: 20px;
-    align-items: end;
-}
-/*COLUMN RIGHT*/
-
-#column-right {
-    position: fixed;
-    top: 20;
-    right: 3%;
-    width: 5%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "scroll";
-    background-color: white;
-    align-items: end;
-    height: 90vh;
-}
-
-#scroll {
-    grid-area: scroll;
 }
 
 /* BUTTONS */
 
-.primary-link {
-    font-family: futura-pt-bold,sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding-top: 5px;
-    border-bottom: solid;
-    border-width: 10px;
-    border-color: #FFC414;
-    width: 25px;
-    text-decoration-line: solid;
-    text-decoration-style: 1px;
+hr.primary-button-line {
+    margin-left: 0px;
+    border: solid 0.5px #333333;
+    margin-top: 0px;
+    width: 40%;
 }
 
 hr.primary-link-line {
@@ -187,14 +47,21 @@ hr.primary-link-line {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
-hr.primary-button-line {
-    margin-left: 0px;
-    border: solid 0.5px #333333;
-    margin-top: 0px;
-    width: 40%;
+.primary-link {
+    font-family: futura-pt-bold,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding-top: 5px;
+    border-bottom: solid;
+    border-width: 10px;
+    border-color: #FFC414;
+    width: 25px;
+    text-decoration-line: solid;
+    text-decoration-style: 1px;
 }
 
 .scroll-button {
@@ -206,7 +73,52 @@ hr.primary-button-line {
     font-weight: 400;
 }
 
-/* TEXT & IMAGES */
+/* TEXT */
+
+a {
+    font-family: futura-pt;
+    text-decoration: none;
+    color: #333333;
+}
+
+.copyright {
+    font-size: 8pt;
+    font-family: futura-pt,sans-serif;
+    font-weight: 300;
+    color: #333333;
+}
+
+h1 {
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+    color: #333333
+}
+
+.h2 {
+    font-size: 14pt;
+    font-family: futura-pt,sans-serif;
+    color: #333333;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: futura-pt,sans-serif;
+    font-style: normal;
+    font-size: 12pt;
+    color: #FFC414;
+}
+
+h4 {
+    font-family: futura-pt,sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: normal;
+    color: #333333
+}
 
 p, td {
     font-family: futura-pt,sans-serif;
@@ -215,42 +127,294 @@ p, td {
     color: #333333
 }
 
-h3 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: futura-pt-bold,sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 12pt;
-    color: #333333
-
-}
-
-.copyright {
-    font-size: 8pt;
-    font-family: futura-pt,sans-serif;
-    font-weight: 300;
-    color: #333333
-}
-
-.body-large {
-    font-size: 14pt;
-    font-family: futura-pt,sans-serif;
-    color: #333333;
-}
-
-a {
-    font-family: futura-pt;
-    text-decoration: none;
-    color: #333333;
-}
-
-.capabilities-icon {
-    width: 20px;
-    margin-right: 5px;
-}
-
 td {
     padding-right: 8px;
     padding-bottom: 8px;
+}
+
+/*IMAGES*/
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 1000px;
+    margin-right: 15px;
+}
+
+.logo {
+    width: 280px;
+}
+
+#site-logo {
+    grid-area: "site-logo";
+}
+
+#site-menu {
+    width: 24px;
+    grid-area: "site-menu";
+}
+
+.tool-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+/* INDEX */
+
+#about-text {
+    grid-area: about-text;
+}
+
+#social-links-desktop {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 30px;
+    grid-area: social-links-desktop;
+    margin-top: 30px;
+    align-items: end;
+    padding-top: 30px;
+    background: rgb(255,255,255);
+    background: linear-gradient(-180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%);
+}
+
+#tragenda-project-image {
+    grid-area: tragenda-project-image;
+}
+
+#tragenda-project-blurb {
+    grid-area: tragenda-project-blurb;
+}
+
+#frigo-project-image {
+    grid-area: frigo-project-image;
+}
+
+#frigo-project-blurb {
+    grid-area: frigo-project-blurb;
+}
+
+#tiny-tails-project-image {
+    grid-area: tiny-tails-project-image;
+}
+
+#tiny-tails-project-blurb {
+    grid-area: tiny-tails-project-blurb;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-blurb {
+    background-color: white;
+}
+
+#desktop-scroll {
+    grid-area: desktop-scroll;
+}
+
+
+/*PROJECT PAGES*/
+
+@media all and (min-width: 960px) { .case-study-slide {
+    width: 90%;
+    height: auto;
+    border: solid 1px lightgray;
+}}
+@media all and (max-width: 960px) { .case-study-slide {
+    width: 100%;
+    height: auto;
+    border: solid 1px lightgray;
+}}
+
+.case-study-slide-description {
+    width: 90%;
+}
+
+#share-icons {
+    margin-top: 40px;
+}
+@media all and (min-width: 960px) { #share-icons-mobile {
+    display: none;
+}}
+
+/* RESPONSIVE */
+
+@media all and (min-width: 960px) { #index-content {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 20% 75% 5%;
+    grid-template-areas: "index-sidebar featured-projects scroll-bar";
+    background-color:white;
+  }
+}
+
+@media all and (max-width: 960px) {
+    #index-content {
+        display: block;
+        margin-top: 50px;
+      }
+}
+
+@media all and (min-width: 960px) { #index-sidebar {
+    margin-right: 20px;
+    background-color: white;
+    }
+}
+
+@media all and (max-width: 960px) { #index-sidebar {
+    background-color: white;
+    width: 100%;
+    }
+}
+
+@media all and (max-width: 960px) { #social-links-desktop {
+    display: none;
+    }
+}
+
+@media all and (min-width: 960px) { #social-links-mobile {
+    display: none;
+    }
+}
+@media all and (max-width: 960px) { #capabilities-desktop {
+    display: none;
+    }
+}
+
+@media all and (min-width: 960px) { #capabilities-tablet {
+    display: none;
+    }
+}
+
+@media all and (min-width: 960px) { #featured-projects{
+    margin-right: 15px;
+    margin-left: 75px;
+    grid-area: featured-projects;
+    background-color: white;
+    }
+}
+
+@media all and (max-width: 960px) { #featured-projects{
+    grid-area: featured-projects;
+    background-color: white;
+    }
+}
+
+@media all and (min-width: 960px) { #tragenda {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    "tragenda-project-image tragenda-project-blurb";
+    align-items: end;
+    grid-gap: 20px;
+    }
+}
+
+@media all and (max-width: 960px) { #tragenda {
+    margin-bottom: 40px;
+    display: block;
+    }
+}
+
+@media all and (min-width: 960px) { #frigo {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    "frigo-project-image frigo-project-blurb";
+    align-items: end;
+    grid-gap: 20px;
+    }
+}
+
+@media all and (max-width: 960px) { #frigo {
+    margin-bottom: 40px;
+    display: block;
+    }
+}
+
+@media all and (min-width: 960px) { #tiny-tails {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    "tiny-tails-project-image tiny-tails-project-blurb";
+    align-items: end;
+    grid-column-gap: 20px;
+    }
+}
+
+@media all and (max-width: 960px) { #tiny-tails {
+    margin-bottom: 40px;
+    display: block;
+    }
+}
+
+@media all and (min-width: 960px) {  #scroll-bar {
+    position: fixed;
+    right: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "scroll-bar";
+    background-color: white;
+    align-items: space-between;
+    justify-items: end;
+    height: 90vh;
+    }
+}
+@media all and (max-width: 960px) {  #scroll-bar {
+    display: none;
+    }
+}
+
+@media all and (min-width: 960px) { #tt-case-study {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 20% 75% 5%;
+    grid-template-areas: "case-study-summary case-study scroll-bar";
+    background-color:white;
+  }
+}
+
+@media all and (max-width: 960px) {
+    #tt-case-study {
+        display: block;
+        padding: 20px;
+        margin-top: 50px;
+      }
+}
+
+@media all and (min-width: 960px) { .case-study-summary {
+    margin-right: 20px;
+    background-color: white;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "project-text project-tools project-collaborators social-links-unfixed";
+    align-items: space-between;
+    }
+}
+
+@media all and (max-width: 960px) { .case-study-summary  {
+    background-color: white;
+    width: 100%;
+    }
+}
+
+@media all and (min-width: 960px) { #case-study {
+    margin-right: 15px;
+    margin-left: 75px;
+    grid-area: case-study;
+    background-color: white;
+    }
+}
+
+@media all and (max-width: 960px) { #case-study {
+    width: 100%;
+    background-color: white;
+    margin-right: 0px;
+    margin-left: 0px;
+    }
 }
